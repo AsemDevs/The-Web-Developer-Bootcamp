@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Colored Background</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Register</h1>
+        <form>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname"><br>
+            <label for="mgender">Male</label>
+            <input type="radio" value="male" id="mgender">
+            <label for="fmgender">Female</label>
+            <input type="radio" value="female">
+            <label for="other">Other</label>
+            <input type="radio" value="other" id="other"><br>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Your Email" id ="email" required>
+            <label for="pswd">Password:</label>
+            <input type="password" id="pswd" required minlength="5" maxlength="10" required>
+            <div>
+                <label>Birthday:
+                    <select name="month">
+                        <option>Month</option>
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                    </select>
+
+                    <select name="day">
+                        <option>Day</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+
+                    <select name="year">
+                        <option>Year</option>
+                        <option>1999</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                    </select>
+                </label>
+            </div>
+
+            <label>I agree to the terms and conditions</label>
+            <input type="checkbox" required><br>
+            <input type="submit">
+
+
+        
+        </form>
+        <script src="js.js"></script>
+
+    </body>
+</html>
